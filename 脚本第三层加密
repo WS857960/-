@@ -1,8 +1,10 @@
+--第三层了，加油吧！虽然我不知道你怎么过来的
 local obf_bitlib = bit32 or bit;
 
 local obf_XOR = obf_bitlib.bxor;
 
 local obf_OR = obf_bitlib.bor;
+
 
 local obf_AND = obf_bitlib.band;
 
