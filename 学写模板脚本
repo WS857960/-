@@ -1,0 +1,149 @@
+local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/nahida-cn/Roblox/main/UI-Library.lua"))()
+
+local Library = DarkraiX:Window("通用脚本", "注入器："..identifyexecutor(), "", Enum.KeyCode.RightControl);
+
+Player = Library:Tab("玩家")
+
+Player:Slider("移动速度", 0, 500, game.Players.LocalPlayer.Character.Humanoid.WalkSpeed, function(Value)
+
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+
+end)
+
+Player:Slider("跳跃高度", 0, 500, game.Players.LocalPlayer.Character.Humanoid.JumpPower, function(Value)
+
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+
+end)
+
+Player:Slider("重力", 0, 500, game.Workspace.Gravity, function(Value)
+
+    game.Workspace.Gravity = Value
+
+end)
+
+Player:Button("飞行", function()
+
+    loadstring(game:HttpGet("https://pastebin.com/raw/U27yQRxS"))()
+
+end)
+
+Player:Toggle("踏空", false, function(Value)
+
+    Jump = Value
+
+    game.UserInputService.JumpRequest:Connect(function()
+
+        if Jump then
+
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
+
+        end
+
+    end)
+
+end)
+
+Player:Toggle("穿墙", false, function(Value)
+
+    Noclip = Value
+
+    Stepped = game.RunService.Stepped:Connect(function()
+
+        if Noclip then
+
+            for a, b in pairs(game.Workspace:GetChildren()) do
+
+                if b.Name == game.Players.LocalPlayer.Name then
+
+                    for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+
+                        if v:IsA("BasePart") then
+
+                            v.CanCollide = false
+
+                        end
+
+                    end
+
+                end
+
+            end
+
+        else
+
+            Stepped:Disconnect()
+
+        end
+
+    end)
+
+end)
+
+Other = Library:Tab("其他")
+
+Other:Button("跟踪玩家", function()
+
+    loadstring(game:HttpGet("https://pastebin.com/raw/F9PNLcXk"))()
+
+end)
+
+Other:Button("建筑工具", function()
+
+    Copy = Instance.new("HopperBin")
+
+    Copy.Name = "Copy"
+
+    Copy.BinType = 3
+
+    Copy.Parent = game.Players.LocalPlayer.Backpack
+
+    Delete = Instance.new("HopperBin")
+
+    Delete.Name = "Delete"
+
+    Delete.BinType = 4
+
+    Delete.Parent = game.Players.LocalPlayer.Backpack
+
+end)
+
+Other:Button("点击传送", function()
+
+    Tool = Instance.new("Tool")
+
+    Tool.Name = "点击传送"
+
+    Tool.RequiresHandle = false
+
+    Tool.Parent = game.Players.LocalPlayer.Backpack
+
+    Tool.Activated:Connect(function()
+
+        Mouse = game.Players.LocalPlayer:GetMouse().Hit+Vector3.new(0, 2.5, 0)
+
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Mouse.X, Mouse.Y, Mouse.Z)
+
+    end)
+
+end)
+
+Other:Toggle("夜视", false, function(Value)
+
+    if Value then
+
+        game.Lighting.Ambient = Color3.new(1, 1, 1)
+
+    else
+
+        game.Lighting.Ambient = Color3.new(0, 0, 0)
+
+    end
+
+end)
+
+About = Library:Tab("关于")
+
+About:Seperator("作者：纳西妲")
+
+About:Seperator("QQ：1626509609")
