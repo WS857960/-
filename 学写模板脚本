@@ -1,8 +1,8 @@
 local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/nahida-cn/Roblox/main/UI-Library.lua"))()
 
-local Library = DarkraiX:Window("通用脚本", "注入器："..identifyexecutor(), "", Enum.KeyCode.RightControl);
+local Library = DarkraiX:Window("秋脚本", "注入器："..identifyexecutor(), "", Enum.KeyCode.RightControl);
 
-Player = Library:Tab("玩家")
+Player = Library:Tab("影响玩家")
 
 Player:Slider("移动速度", 0, 500, game.Players.LocalPlayer.Character.Humanoid.WalkSpeed, function(Value)
 
@@ -88,7 +88,7 @@ Other:Button("跟踪玩家", function()
 
 end)
 
-Other:Button("建筑工具", function()
+Other:Button("建筑工具()道具", function()
 
     Copy = Instance.new("HopperBin")
 
@@ -108,7 +108,7 @@ Other:Button("建筑工具", function()
 
 end)
 
-Other:Button("点击传送", function()
+Other:Button("点击传送(道具)", function()
 
     Tool = Instance.new("Tool")
 
@@ -144,6 +144,6 @@ end)
 
 About = Library:Tab("关于")
 
-About:Seperator("作者：纳西妲")
+About:Seperator("秋风拂过改制")
 
 About:Seperator("QQ：1626509609")
