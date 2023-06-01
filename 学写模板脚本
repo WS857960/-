@@ -1,6 +1,6 @@
 local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/nahida-cn/Roblox/main/UI-Library.lua"))()
 
-local Library = DarkraiX:Window("秋脚本", "注入器："..identifyexecutor(), "", Enum.KeyCode.RightControl);
+local Library = DarkraiX:Window("秋脚本", "2.20230601测试版", Enum.KeyCode.RightControl);
 
 Player = Library:Tab("影响玩家")
 
@@ -144,6 +144,22 @@ end)
 
 About = Library:Tab("关于")
 
-About:Seperator("秋风拂过改制")
+About:Seperator("关于作者")
 
-About:Seperator("QQ：1626509609")
+About:Seperator("作者:秋风拂过")
+
+About:Seperator("作者QQ号:539414413")
+
+Other:Button("复制作者QQ号", function()
+
+setclipboard("539414413")  
+
+end)
+
+About:Seperator("关于您")
+
+About:Seperator("注入器:"..identifyexecutor(),"")
+
+About:Seperator("用户名:"..game.Players.LocalPlayer.Name.."")
+
+About:Seperator("服务器ID:"..game.GameId.."")
