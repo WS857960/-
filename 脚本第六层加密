@@ -1,3 +1,4 @@
+--第六层了，加油吧！虽然很难，但是我相信你找找应该还能破开，只不过后面就不一定了
 local obf_bitlib = bit32 or bit;
 
 local obf_XOR = obf_bitlib.bxor;
