@@ -1,3 +1,4 @@
+--现在是是第四层，加油吧！但是我不相信你能继续破下去
 local TABLE_TableIndirection = {};
 
 TABLE_TableIndirection["obf_bitlib%0"] = bit32 or bit;
