@@ -1,3 +1,4 @@
+--第五层了，加油吧！，虽然这些都快无解了
 local obf_stringchar = string.char;
 
 local obf_stringbyte = string.byte;
