@@ -232,13 +232,6 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "绘制透视名字显示",	
-Callback = function()	
-loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/tou"))()  
-	end
-})
-
-Tab:AddButton({
 	Name = "飞车(搭配穿墙可DOORS快速飞行无回拉)",	
 Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()	
@@ -388,13 +381,6 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 })
 
 Tab:AddButton({
-	Name = "吸人",
-	Callback = function()
-     loadstring(game:HttpGet('https://pastebin.com/raw/hQSBGsw2'))()
-  	end    
-})
-
-Tab:AddButton({
   Name = "隐身道具(别人可见)",
   Callback = function()
     loadstring(game:HttpGet("https://gist.githubusercontent.com/skid123skidlol/cd0d2dce51b3f20ad1aac941da06a1a1/raw/f58b98cce7d51e53ade94e7bb460e4f24fb7e0ff/%257BFE%257D%2520Invisible%2520Tool%2520(can%2520hold%2520tools)",true))()
@@ -514,13 +500,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/ma
 })
 
 Tab:AddButton({
-	Name = "能量罐）",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/nengliangtiao"))()
-    end
-})   
-
-Tab:AddButton({
 	Name = "紫色手电筒（在电梯购买东西的时候使用）",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Purple%20Flashlight"))()
@@ -535,15 +514,16 @@ end
 })      
 
 Tab:AddButton({
-  Name = "极端模式",
-  Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/gNybFb2Z"))()
-  end
-})
-Tab:AddButton({
   Name = "微山",
   Callback = function()
     loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\117\72\72\112\56\102\122\83"))()
+  end
+})
+Tab:AddButton({
+
+  Name = "MSDOORS2.4(纯英文)",
+  Callback = function()    
+  loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
   end
 })
 Tab:AddButton({
@@ -1174,54 +1154,23 @@ Tab:AddButton({
   end
 })
 
-Tab:AddButton({
-  Name = "MSDOORS2.4(纯英文)",
-  Callback = function()
-    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
-  end
-})
 local Tab = Window:MakeTab({
   Name = "DOORS娱乐十字架(只对自己召唤的怪有用)",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
 
-Tab:AddButton({
-  Name = "刷怪菜单",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shuaguai"))()
-  end
+ Tab:AddButton({
+
+	Name = "封印一切十字架(按q使用)",
+Callback = function()
+_G.Uses = 10000
+_G.Range = 999
+_G.OnAnything = true
+_G.Fail = false
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+end
 })
- Tab:AddButton({ 
- Name = "耶稣十字架", 
- Callback = function ()   
- loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi2"))()  
- end
- })
- Tab:AddButton({ 
- Name = "紫光十字架", 
- Callback = function ()  
- loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi3"))() 
- end
- })
- Tab:AddButton({ 
- Name = "万圣节十字架", 
- Callback = function ()  
- loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi4"))()  
- end
- })
- Tab:AddButton({ 
- Name = "Zepsyy十字架", 
- Callback = function ()   
- loadstring(game:HttpGet("https://raw.githubusercontent.com/ZepsyyCodesLUA/Utilities/main/Crucifix"))()
- end
- })
- Tab:AddButton({  
- Name = "普通十字架",  
- Callback = function ()   
- loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizizhen"))() 
- end
- })
  Tab:AddButton({  
  Name = "SCreech十字架",  
  Callback = function () 
@@ -1260,4 +1209,48 @@ Tab:AddButton({
 	Callback = function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
   	end    
+})
+local Tab = Window:MakeTab({
+    Name = "测试脚本",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+Name = "特殊物品",
+end
+})
+Tab:AddButton({
+Name = "闪电",	
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Zeus%20Lightning"))()
+end
+})
+Tab:AddButton({
+Name = "魔法书",	
+Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Magic%20Book"))()
+end
+})
+Tab:AddTextbox({
+Name = "设置门的文字",
+PlaceholderText = "101,500",
+RemoveTextAfterFocusLost = false,
+Callback = function(Text)     
+local r=workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")]    
+r.Door.Sign.Stinker.Text=Text     
+r.Door.Sign.Stinker.Highlight.Text=Text     
+r.Door.Sign.Stinker.Shadow.Text=Text	
+end,   
+})
+Tab:AddButton({
+Name = "最强doors",
+Callback = function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))()
+end
+})
+Tab:AddButton({	
+Name = "不可能模式",	
+Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Ukazix/impossible-mode/main/Protected_79.lua.txt'))()
+end
 })
