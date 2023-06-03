@@ -1161,7 +1161,6 @@ local Tab = Window:MakeTab({
 })
 
  Tab:AddButton({
-
 	Name = "封印一切十字架(按q使用)",
 Callback = function()
 _G.Uses = 10000
@@ -1230,17 +1229,6 @@ Name = "魔法书",
 Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Magic%20Book"))()
 end
-})
-Tab:AddTextbox({
-Name = "设置门的文字",
-PlaceholderText = "101,500",
-RemoveTextAfterFocusLost = false,
-Callback = function(Text)     
-local r=workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")]    
-r.Door.Sign.Stinker.Text=Text     
-r.Door.Sign.Stinker.Highlight.Text=Text     
-r.Door.Sign.Stinker.Shadow.Text=Text	
-end,   
 })
 Tab:AddButton({
 Name = "最强doors",
