@@ -1106,15 +1106,10 @@ PremiumOnly = false
 })
 
 Tab:AddButton({
-
 	Name = "自动杀鲨鱼",
-
 	Callback = function()   
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Misc%20Scripts/sharkbite2.lua",true))()
-
   	end  
-
   })
 local Tab = Window:MakeTab({
   Name = "脚本集(会覆盖)",
@@ -1161,16 +1156,6 @@ local Tab = Window:MakeTab({
   PremiumOnly = false
 })
 
- Tab:AddButton({
-	Name = "封印一切十字架(按q使用)",
-Callback = function()
-_G.Uses = 10000
-_G.Range = 999
-_G.OnAnything = true
-_G.Fail = false
-loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
-end
-})
  Tab:AddButton({  
  Name = "SCreech十字架",  
  Callback = function () 
