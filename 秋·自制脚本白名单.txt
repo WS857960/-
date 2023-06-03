@@ -124,7 +124,8 @@ qjbdbmd = {
     "114514ght",
     "shdhsns67",
     "dkfkfkfjfkfjdj",
-    "sanren210"
+    "sanren210",
+    "klkkututut"
 }
 if table.find(qjbdbmd, game.Players.LocalPlayer.Name) then
    local CoreGui = game:GetService("StarterGui")
