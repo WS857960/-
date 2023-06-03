@@ -87,19 +87,23 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/WS857960/-/main/UI.txt'))()
-local Window = OrionLib:MakeWindow({Name = "秋·自制脚本", HidePremium = false, SaveConfig = true,IntroText = "秋·自制脚本 ▏您的注入器:"..identifyexecutor()," ▏您的用户名:"..game.Players.LocalPlayer.Name.." ▏当前游戏ID:"..game.GameId.." "", ConfigFolder = "好闲"})
+local Window = OrionLib:MakeWindow({Name = "秋·自制脚本 ▏修复版 ▏3.20230602", HidePremium = false, SaveConfig = true,IntroText ="秋·自制脚本", ConfigFolder = "好闲"})
 OrionLib:MakeNotification({
   Name = "欢迎使用秋·自制脚本,作者QQ:539414413",
-  Content = "当前游戏ID为:" .. game.GameId .. ".",
+  Content = "当前游戏ID为:" .. game.GameId .. " ",
   Image = "rbxassetid://7734068321",
   Time = 10
 })
 local Tab = Window:MakeTab({
-  Name = "我说句话",
+  Name = "首页",
   Icon = "rbxassetid://4483345998",
   PremiumOnly = false
 })
 Tab:AddParagraph("你好"..game.Players.LocalPlayer.Name..",欢迎使用秋·自制脚本","脚本仅供娱乐")
+Tab:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name..)
+Tab:AddParagraph("您的注入器:"," "..identifyexecutor..)
+Tab:AddParagraph("您当前服务器的ID"," "..game.GameId..)
+Tab:AddParagraph("您当前位置的坐标:"," ".. game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame..)
 Tab:AddParagraph("反挂机已启动","")
 Tab:AddButton({
 	Name = "反挂机2",
