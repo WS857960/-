@@ -1115,6 +1115,63 @@ Tab:AddButton({
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/fabao"))()
   	end
 })
+local Tab = Window:MakeTab({    
+
+Name = "鲨鱼2",	
+
+Icon = "rbxassetid://4483345998",	
+
+PremiumOnly = false
+
+})
+
+Tab:AddDropdown({	
+Name = "选择船",	
+Default = "1",
+	Options = {"无",
+ "DuckyBoatBeta", 
+"DuckyBoat", 
+"BlueCanopyMotorboat", 
+"BlueWoodenMotorboat", 
+"UnicornBoat", 
+"Jetski",
+ "RedMarlin", 
+"Sloop", 
+"TugBoat", 
+"SmallDinghyMotorboat", 
+"JetskiDonut", 
+"Marlin", 
+"TubeBoat", 
+"FishingBoat",
+ "VikingShip",
+ "SmallWoodenSailboat",
+ "RedCanopyMotorboat",
+ "Catamaran", 
+"CombatBoat", 
+"TourBoat", 
+"Duckmarine",
+ "PartyBoat",
+ "MilitarySubmarine", 
+"GingerbreadSteamBoat", 
+"Sleigh2022", 
+"Snowmobile", 
+"CruiseShip"},
+	Callback = function(Value)
+local ohString1 =(Value)game:GetService("ReplicatedStorage").EventsFolder.BoatSelection.UpdateHostBoat:FireServer(ohString1)
+	end 
+})
+
+Tab:AddButton({
+
+	Name = "自动杀鲨鱼",
+
+	Callback = function()   
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Misc%20Scripts/sharkbite2.lua",true))()
+
+  	end  
+
+  })
 local Tab = Window:MakeTab({
   Name = "脚本集(会覆盖)",
   Icon = "rbxassetid://4483345998",
