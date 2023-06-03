@@ -1099,66 +1099,10 @@ Tab:AddButton({
   	end
 })
 
-local Tab = Window:MakeTab({
-	Name = "法宝模拟器",
-	Icon = "rbxassetid://7734068321",
-	PremiumOnly = false
-})
-
-local Section = Tab:AddSection({
-	Name = "功能"
-})
-
-Tab:AddButton({
-	Name = "法宝自动刷（任何地方）",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/fabao"))()
-  	end
-})
 local Tab = Window:MakeTab({    
-
 Name = "鲨鱼2",	
-
 Icon = "rbxassetid://4483345998",	
-
 PremiumOnly = false
-
-})
-
-Tab:AddDropdown({	
-Name = "选择船",	
-Default = "1",
-	Options = {"无",
- "DuckyBoatBeta", 
-"DuckyBoat", 
-"BlueCanopyMotorboat", 
-"BlueWoodenMotorboat", 
-"UnicornBoat", 
-"Jetski",
- "RedMarlin", 
-"Sloop", 
-"TugBoat", 
-"SmallDinghyMotorboat", 
-"JetskiDonut", 
-"Marlin", 
-"TubeBoat", 
-"FishingBoat",
- "VikingShip",
- "SmallWoodenSailboat",
- "RedCanopyMotorboat",
- "Catamaran", 
-"CombatBoat", 
-"TourBoat", 
-"Duckmarine",
- "PartyBoat",
- "MilitarySubmarine", 
-"GingerbreadSteamBoat", 
-"Sleigh2022", 
-"Snowmobile", 
-"CruiseShip"},
-	Callback = function(Value)
-local ohString1 =(Value)game:GetService("ReplicatedStorage").EventsFolder.BoatSelection.UpdateHostBoat:FireServer(ohString1)
-	end 
 })
 
 Tab:AddButton({
