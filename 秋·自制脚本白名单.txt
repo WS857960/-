@@ -129,10 +129,15 @@ qjbdbmd = {
     "caicaikou",
     "134689ien",
     "vvgxefn",
-    "",
-    "",
-    "",
-    ""
+    "xiaomaoawa",
+    "6ikun6666",
+    "bornman05",
+    "djdjfj46564",
+    "yujbvhhjj",
+    "erth6645",
+    "xckahns",
+    "sushsh54",
+    "qweertasdh"
 }
 if table.find(qjbdbmd, game.Players.LocalPlayer.Name) then
    local CoreGui = game:GetService("StarterGui")
