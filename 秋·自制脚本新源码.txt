@@ -1192,34 +1192,42 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shuaguai"))()
   end
 })
-
-Tab:AddButton({
-  Name = "耶稣十字架",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi2"))()
-  end
-})
-
-Tab:AddButton({
-  Name = "紫光十字架",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi3"))()
-  end
-})
-
-Tab:AddButton({
-  Name = "万圣节十字架",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi4"))()
-  end
-})
-
-Tab:AddButton({
-  Name = "普通十字架",
-  Callback = function ()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizizhen"))()
-  end
-})
+ Tab:AddButton({ 
+ Name = "耶稣十字架", 
+ Callback = function ()   
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi2"))()  
+ end
+ })
+ Tab:AddButton({ 
+ Name = "紫光十字架", 
+ Callback = function ()  
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi3"))() 
+ end
+ })
+ Tab:AddButton({ 
+ Name = "万圣节十字架", 
+ Callback = function ()  
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi4"))()  
+ end
+ })
+ Tab:AddButton({ 
+ Name = "Zepsyy十字架", 
+ Callback = function ()   
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/ZepsyyCodesLUA/Utilities/main/Crucifix"))()
+ end
+ })
+ Tab:AddButton({  
+ Name = "普通十字架",  
+ Callback = function ()   
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizizhen"))() 
+ end
+ })
+ Tab:AddButton({  
+ Name = "SCreech十字架",  
+ Callback = function () 
+ loadstring(game:HttpGet("https://pastebin.com/raw/W1AzELhb"))()  
+ end
+ })
 local Tab = Window:MakeTab({
 	Name = "FE脚本(英文)",
 	Icon = "rbxassetid://4483345998",
