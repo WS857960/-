@@ -16,6 +16,7 @@ qjbdbmd = {
     "loogloug",
     "USAAER1",
     "Chuzhixoan",
+    "qjsosyakxbnzsr",
     "qwertasxfrcryc",
     "Chinese21376",
     "Pasteokay",
