@@ -34,6 +34,8 @@ qjbdbmd = {
     "dzx239558",
     "sat841",
     "sanren210",
+    "CXKJxn",
+    "pkoj5418",
     "qwq_Oxiao",
     "QWERTYASDFGHUZ",
     "666666abh",
