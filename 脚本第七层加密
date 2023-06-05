@@ -2,7 +2,7 @@
 CoreGui:SetCore("SendNotification", {
     Title = "加载中",
     Text = "1/7",
-    Duration = 5,
+    Duration = 0.1,
 })
 wait(0.1)
 local SCC_CharPool={
