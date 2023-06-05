@@ -20,6 +20,8 @@ qjbdbmd = {
     "qjsosyakxbnzsr",
     "qwertasxfrcryc",
     "Chinese21376",
+    "xd_nh233",
+    "tangkoushui1",
     "Pasteokay",
     "vfghnmklop",
     "caicaikou",
