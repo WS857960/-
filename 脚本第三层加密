@@ -1,4 +1,15 @@
---第三层了，加油吧！虽然我不知道你怎么过来的
+   local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+
+    Title = "加载中",
+
+    Text = "5/7",
+
+    Duration = 0.1,
+
+})
+wait(0.1)
 local obf_bitlib = bit32 or bit;
 
 local obf_XOR = obf_bitlib.bxor;
