@@ -1,4 +1,14 @@
---现在是是第四层，加油吧！但是我不相信你能继续破下去
+   local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+
+    Title = "加载中",
+
+    Text = "4/7",
+
+    Duration = 0.1,
+})
+wait(0.1)
 local TABLE_TableIndirection = {};
 
 TABLE_TableIndirection["obf_bitlib%0"] = bit32 or bit;
