@@ -1,4 +1,10 @@
---第五层了，加油吧！，虽然这些都快无解了
+   local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "加载中",
+    Text = "3/7",
+    Duration = 0.1,
+})
+wait(0.1)
 local obf_stringchar = string.char;
 
 local obf_stringbyte = string.byte;
