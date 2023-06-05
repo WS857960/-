@@ -1,4 +1,14 @@
---第六层了，加油吧！虽然很难，但是我相信你找找应该还能破开，只不过后面就不一定了
+   local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+
+    Title = "加载中",
+
+    Text = "2/7",
+
+    Duration = 0.1,
+})
+wait(0.1)
 local obf_bitlib = bit32 or bit;
 
 local obf_XOR = obf_bitlib.bxor;
