@@ -15,3 +15,14 @@ local SCC_CharPool={
 
 loadstring(game:HttpGet(SCC_CharPool[1]))()
    
+OrionLib:MakeNotification({
+
+  Name = "加载完成",
+
+  Content = "",
+
+  Image = "rbxassetid://7734068321",
+
+  Time = 0.1
+
+})
