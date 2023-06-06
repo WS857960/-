@@ -15,6 +15,7 @@ qjbdbmd = {
     "jbf584",
     "chinese36153",
     "nihaoocaiyou",
+    "caicaikou",
     "loogloug",
     "wodetong",
     "Xggxuc",
