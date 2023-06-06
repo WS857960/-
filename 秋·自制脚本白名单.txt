@@ -17,6 +17,7 @@ qjbdbmd = {
     "nihaoocaiyou",
     "loogloug",
     "wodetong",
+    "Xggxuc",
     "USAAER1",
     "Chuzhixoan",
     "qjsosyakxbnzsr",
