@@ -10,6 +10,7 @@ wait(3)
 qjbdbmd = {
     "WS857960",
     "wkx_nb",
+    "xinhaoxian3",
     "baitiazao",
     "HelloChina598",
     "wezega",
