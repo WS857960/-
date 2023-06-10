@@ -15,6 +15,7 @@ qjbdbmd = {
     "HelloChina598",
     "wezega",
     "jbf584",
+    "CN_wsygzgr321",
     "chinese36153",
     "chmeidingding13",
     "nihaoocaiyou",
