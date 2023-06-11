@@ -18,6 +18,8 @@ qjbdbmd = {
     "CN_wsygzgr321",
     "chinese36153",
     "chmeidingding13",
+    "CN_liuk",
+    "hydqjb",
     "nihaoocaiyou",
     "caicaikou",
     "loogloug",
