@@ -139,7 +139,7 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
   Name = "巴掌模拟器",
   Callback = function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Unknownkellymc1/Unknownscripts/main/slap-battles')))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/cheesynob39/R2O/main/LOADSTRING.lua"))()
   end
 })
 Tab:AddButton({
