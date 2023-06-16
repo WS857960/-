@@ -19,6 +19,7 @@ qjbdbmd = {
     "chinese36153",
     "dkfkfkfjfkfjdj",
     "zvzjzjdjshish",
+    "kfcsb666",
     "chmeidingding13",
     "CN_liuk",
     "hydqjb",
