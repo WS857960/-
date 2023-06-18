@@ -2,7 +2,7 @@
 
 CoreGui:SetCore("SendNotification", {
 
-    Title = "",
+    Title = "加载中",
 
     Text = "6/7",
 
