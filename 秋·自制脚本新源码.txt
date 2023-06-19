@@ -86,7 +86,7 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/WS857960/-/main/UI.txt'))()
+local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/WS857960/-/main/QJBDUI.txt'))()
 local Window = OrionLib:MakeWindow({Name = "秋·自制脚本｜修复版｜3.20230602", HidePremium = false, SaveConfig = true,IntroText ="秋·自制脚本", ConfigFolder = "好闲"})
 OrionLib:MakeNotification({
   Name = "欢迎使用秋·自制脚本,作者QQ:539414413",
