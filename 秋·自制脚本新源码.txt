@@ -104,6 +104,7 @@ Tab:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
 Tab:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 Tab:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
 Tab:AddParagraph("反挂机已启动","")
+Tab:AddParagraph("秋脚本目前已和神光脚本合作","")
 Tab:AddButton({
 	Name = "反挂机2",
 	Callback = function()
