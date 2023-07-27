@@ -82,7 +82,7 @@ local function CreateGUI(title)
     agreeButton.Text = "同意"
     agreeButton.TextColor3 = Color3.new(255, 255, 255)
     agreeButton.TextSize = math.floor(frame.Size.Y.Offset * 0.08)
-    agreeButton.Font = Enum.Font.SourceSans 
+    agreeButrceSans 
     agreeButton.Parent = frame
 
     
@@ -90,7 +90,7 @@ local function CreateGUI(title)
     agreeFrame.Size = UDim2.new(0.8, 0, 0.5, 0)
     agreeFrame.Position = UDim2.new(0.1, 0, 0.22, 0)
     agreeFrame.BackgroundColor3 = Color3.fromRGB(240, 240, 240)
-    agreeFrame.Text = "1.账号封禁,我们概不负责.\n 2.禁止拿去圈钱. \n 3.不接受任何恶意，辱骂，造谣，抹黑等行为，发现一律踢出加黑名单"
+    agreeFrame.Text = "1.账号封禁,我们概不负责.\n 2.禁止拿去圈钱. \n 3.不接受任何恶意辱骂,造谣，抹黑等行为，发现一律踢出加黑名单. \n 4.秋脚本永不收费,如果被圈一律不负责."
     agreeFrame.TextWrapped = true
 
     
